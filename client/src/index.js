@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (event.target.classList.contains('delete')) {
       const userId = event.target.getAttribute('data-id');
-      if (confirm('Are you sure you want to delete this user?')) {
+      if (confirm('Are you sure you want to del this user?')) {
         fetch(`/api/users/${userId}`, {
           method: 'DELETE',
         })
