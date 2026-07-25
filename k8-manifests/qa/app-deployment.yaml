@@ -13,8 +13,6 @@ spec:
       labels:
         app: nodejs-app
     spec:
-      imagePullSecrets:
-      - name: regcred
       containers:
       - name: nodejs-app
         image: devopsshack/nodejs-app:008c8c568c31daef8d1825235638d292f50607b6
