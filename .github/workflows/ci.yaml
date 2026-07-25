@@ -104,7 +104,7 @@ jobs:
           password: ${{ secrets.DOCKERHUB_TOKEN }}
  
       - name: Build docker image
-        run: docker build -t ${{ vars.DOCKERHUB_USERNAME }}/cicd-app:${{ github.sha }} .
+        run: docker build -t ${{ vars.DOCKERHUB_USERNAME }}/3-tier-app-gitactions:${{ github.sha }} .
  
       - name: Install Trivy
         uses: aquasecurity/setup-trivy@v0.2.6
